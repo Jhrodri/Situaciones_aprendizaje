@@ -1,0 +1,150 @@
+/* WEB MEJORADA — marcas de procedencia y tablas limpias */
+.noof{background:#fff1c9;border-bottom:1px dotted #a8690a;padding:0 2px}
+.tag-noof,.tag-der,.tag-of{display:inline-block;font-size:.7em;font-weight:700;line-height:1.4;border-radius:3px;padding:0 6px;margin-left:.45em;vertical-align:middle;white-space:nowrap;font-family:Arial,Helvetica,sans-serif}
+.tag-noof{background:#ffe2a0;color:#6b3d00;border:1px solid #d9a441}
+.tag-der{background:#ffe2a0;color:#6b3d00;border:1px solid #d9a441}
+.tag-of{background:#d9f2df;color:#14532d;border:1px solid #86c99a}
+.noof-block{border-left:5px solid #d9a441;background:#fff8e6;padding:.5em 1em;margin:1em 0;border-radius:0 4px 4px 0}
+.noof-block>summary{cursor:pointer;font-weight:600}
+.noof-block p:first-child{margin-top:.3em}
+.noof-block p:last-child{margin-bottom:.3em}
+.fuente{border:1px solid #b9c8dc;border-left:5px solid #2b6cb0;background:#f3f7fc;padding:.55em 1em;margin:1em 0;font-size:.9em;border-radius:0 4px 4px 0}
+.fuente ul{margin:.3em 0 .5em 1.2em;padding:0}
+.fuente p{margin:.35em 0}
+.fuente-ok{color:#14532d}
+.fuente-av{color:#7a3a00;background:#fff1c9;padding:.25em .5em;border-radius:3px}
+.fuente-l{font-size:.92em;color:#334155;border-top:1px solid #d3deec;padding-top:.4em;margin-top:.5em}
+.tabla-cur{border-collapse:collapse;width:100%;margin:.8em 0;font-size:.95em}
+.tabla-cur th,.tabla-cur td{border:1px solid #9aa7b6;padding:.4em .6em;vertical-align:top;text-align:left}
+.tabla-cur thead th{background:#e8eef6}
+.tabla-cur tbody th{background:#f4f6f9;white-space:nowrap;width:1%}
+.tabla-cur tr:target{outline:3px solid #2b6cb0;outline-offset:-2px;background:#eaf3ff}
+.tabla-cur td.cod{white-space:nowrap}
+.ce-block{margin:1.6em 0 2em}
+.ce-block>h3{margin:.2em 0 .4em}
+.ce-text{background:#f4f6f9;border-left:5px solid #2b6cb0;padding:.5em 1em;margin:.5em 0}
+.codes a,.desc a{display:inline-block;margin:0 .35em .25em 0;padding:0 .35em;border:1px solid #b7c4d6;border-radius:3px;background:#fff;text-decoration:none;font-size:.88em;white-space:nowrap}
+.codes a:hover,.desc a:hover{background:#eaf3ff;border-color:#2b6cb0}
+.desc{line-height:1.9}
+details.oficial{border:1px solid #cdd7e3;background:#fafcff;padding:.4em .9em;margin:.7em 0;border-radius:4px}
+details.oficial>summary{cursor:pointer;font-weight:600}
+.dif{background:#fff8e6;border:1px solid #e3c47a;border-radius:4px;padding:.4em 1em;margin:1em 0}
+.dif h3{margin:.3em 0}
+.leyenda li{margin:.4em 0}
+@media (max-width:700px){
+  .tabla-cur{font-size:.9em}
+  .tabla-cur tbody th{white-space:normal}
+  .tabla-cur th,.tabla-cur td{padding:.3em .4em}
+  .tabla-wrap{overflow-x:auto}
+}
+.tabla-wrap{overflow-x:auto;margin:.5em 0}
+mark.dif-txt{background:#ffd9d9;padding:0 2px}
+a.xref{font-size:.8em;margin-left:.4em;white-space:nowrap}
+/* tablas pegadas desde Word: ancho fluido (evita desbordes en pantallas pequeñas) */
+.iDevice_content table{width:100%!important;max-width:100%;table-layout:auto}
+.iDevice_content table td,.iDevice_content table th{width:auto!important;word-break:normal;overflow-wrap:break-word}
+.iDevice_content{overflow-x:auto}
+@media (max-width:700px){
+  .tabla-cur.apilable thead{display:none}
+  .tabla-cur.apilable,.tabla-cur.apilable tbody,.tabla-cur.apilable tr,.tabla-cur.apilable td,.tabla-cur.apilable th{display:block;width:auto!important}
+  .tabla-cur.apilable tr{margin:0 0 1em;border:1px solid #9aa7b6}
+  .tabla-cur.apilable td,.tabla-cur.apilable th{border:0;border-bottom:1px solid #d5dce6}
+  .tabla-cur.apilable td::before{content:attr(data-l);display:block;font-size:.8em;font-weight:700;color:#475569;margin-bottom:.2em}
+}
+/* saberes con grupos (Tecnología) y celdas de criterio ancladas */
+.tabla-cur tr.grupo th,.tabla-cur tr.grupo td{background:#eef2f8}
+.tabla-cur tr.sub td:nth-child(2){padding-left:1.4em}
+.tabla-cur td:target{outline:3px solid #2b6cb0;outline-offset:-2px;background:#eaf3ff}
+
+/* ---------- vista unificada y matrices ---------- */
+@media (max-width:700px){ .tabla-cur.apilable td:empty{display:none} }
+.vu-toc{font-size:.95em}
+.vu-ce{border:1px solid #cfd8e6;border-radius:6px;padding:.2em 1em 1em;margin:1.4em 0}
+.vu-ce h3{margin-top:.6em}
+.vu-desc .desc a{margin-right:.35em}
+.vu-curso{margin:1.1em 0 .3em;color:#1f3a5f}
+.vu-crit{margin:.9em 0;padding-left:.8em;border-left:3px solid #9bb4d8}
+.vu-crit:target{background:#eaf3ff}
+.vu-sab ul{margin:.3em 0 .3em 1.2em}
+.vu-sab li{margin:.25em 0}
+.vu-sab summary{cursor:pointer;font-size:.92em;color:#334155}
+.vu-sab li.grp>ul{margin-left:1.6em;font-size:.95em}
+.vu-nota,.vu-leg{font-size:.9em;color:#475569}
+.vu-aviso{background:#fff3cd;border-left:4px solid #e0a800;padding:.5em .8em}
+.matriz{border-collapse:collapse;font-size:.85em}
+.matriz th,.matriz td{border:1px solid #cdd5df;text-align:center;padding:1px 4px;min-width:1.7em}
+.matriz thead th{background:#e9eef6}
+.matriz th.v{height:7.5em;vertical-align:bottom;padding:2px 1px;font-weight:600}
+.matriz th.v span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;display:inline-block}
+.matriz th.v a{display:block;text-decoration:none}
+.matriz th.blq{font-size:1.05em}
+.matriz td.b0,.matriz th.b0,.matriz th.blq{border-left:2px solid #5b6b82}
+.matriz tr.ce-sep th{background:#dfe8f5;text-align:left;padding:2px 8px}
+.matriz th.sticky{position:sticky;left:0;background:#fff;z-index:1;text-align:left}
+.matriz thead th.sticky{background:#e9eef6;z-index:2}
+.matriz tr.foot td,.matriz tr.foot th{background:#f1f3f6;font-weight:700}
+.matriz td.tot{color:#475569}
+.matriz td a{text-decoration:none;display:block;color:#1f4e8c}
+.matriz td a:hover{background:#ffe08a}
+.matriz-ck td{vertical-align:top}
+.matriz-ck td a{margin-right:.3em}
+
+/* ---------- guía, plantilla y ejemplos de situaciones de aprendizaje ---------- */
+blockquote.norma{margin:.8em 0;padding:.5em 1em;border-left:4px solid #5b6b82;background:#f4f6fa}
+blockquote.norma p{margin:.3em 0}
+blockquote.norma .norma-f{font-size:.85em;color:#475569}
+.sa-pasos li{margin:.5em 0}
+.sa-guia td:nth-child(1){text-align:center;font-weight:700}
+.sa-ficha th{width:12em;text-align:left;vertical-align:top;background:#eef2f8}
+.sa-reto{font-size:1.05em;background:#eaf3ff;border-left:4px solid #2b6cb0;padding:.5em .8em}
+.sa-letras{margin:.3em 0 .3em 1.5em}
+.sa-letras li{margin:.35em 0}
+.sa-sab td.sa-mk,.sa-sab th:first-child{text-align:center;width:4.5em}
+.sa-ck{color:#1b7f3b;font-weight:700}
+.sa-no{color:#9aa4b2}
+.sa-ev{margin:.4em 0}
+.sa-sec td:first-child{text-align:center;font-weight:700}
+.sa-ins tr.foot td{background:#f1f3f6}
+.sa-mat td{text-align:center}
+.sa-rub th[scope=row]{background:#eef2f8;text-align:left}
+.sa-rub td{vertical-align:top}
+.sa-chk,.sa-lista{list-style:none;padding-left:.2em}
+.sa-chk li,.sa-lista li{margin:.35em 0}
+.sa-pl{border:1px solid #cfd8e6;border-radius:6px;padding:.1em 1em 1em;margin:1.2em 0}
+.sa-q{color:#475569}
+.sa-vacia td{height:2.4em}
+.sa-dl{font-weight:700}
+.sa-err li,.sa-inv li{margin:.4em 0}
+@media (max-width:700px){
+  .sa-ficha th{width:auto;display:block}
+  .sa-ficha td{display:block}
+  .sa-mat{font-size:.85em}
+}
+.sa-ins td:last-child{white-space:nowrap}
+.sa-letras{list-style:none;padding-left:0}
+.sa-letras li{margin:.4em 0}
+
+/* ---- glosario ---- */
+.glos-az{display:flex;flex-wrap:wrap;gap:.25rem;margin:1rem 0 1.5rem;padding:.5rem;background:#f4f6f8;border-radius:6px;position:sticky;top:0;z-index:2}
+.glos-az a,.glos-az span{display:inline-block;min-width:1.9rem;text-align:center;padding:.25rem .4rem;border-radius:4px;font-weight:600}
+.glos-az a{background:#fff;border:1px solid #c5ccd3;text-decoration:none}
+.glos-az a:hover,.glos-az a:focus{background:#e6eef7}
+.glos-az span{color:#a0a7ae}
+.glos-az .glos-sig-l{margin-left:auto;min-width:0}
+.glos-h{margin-top:1.8rem;border-bottom:2px solid #c5ccd3;padding-bottom:.2rem}
+dl.glos{margin:0}
+.glos-e{margin:0 0 1.1rem;padding-bottom:.9rem;border-bottom:1px solid #e3e7eb;scroll-margin-top:4.5rem}
+.glos-e dt{font-weight:700;font-size:1.08em;margin:0 0 .35rem}
+.glos-e dd{margin:0}
+.glos-e dd p{margin:.35rem 0}
+.glos-e dd blockquote.norma{margin:.5rem 0}
+.glos-e:target{background:#fff8e1;outline:2px solid #f0c040;outline-offset:4px}
+.glos-v{font-size:.92em}
+.glos-v>span{font-weight:600;margin-right:.3rem}
+.glos-top{margin-top:1.5rem;text-align:right}
+@media (max-width:700px){.glos-az{position:static}.glos-az .glos-sig-l{margin-left:0}}
+
+/* ---- cabecera con logo UAL ---- */
+#headerContent{display:flex;align-items:center;gap:.8rem}
+#headerContent .logo-ual{height:56px;width:56px;flex:none}
+@media (max-width:700px){#headerContent .logo-ual{height:44px;width:44px}}
